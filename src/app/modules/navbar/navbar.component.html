@@ -1,0 +1,98 @@
+<!-- <div style="height: 80vh;">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Responsive Navigation</span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <a href="#" mat-button>Menu Item 1</a>
+        <a href="#" mat-button>Menu Item 2</a>
+        <a href="#" mat-button>Menu Item 3</a>
+        <a href="#" mat-button>Menu Item 4</a>
+        <a href="#" mat-button>Menu Item 5</a>
+        <a href="#" mat-button>Menu Item 6</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill style="height: 100%;">
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a href="#" mat-list-item>Menu Item 1</a>
+        <a href="#" mat-list-item>Menu Item 2</a>
+        <a href="#" mat-list-item>Menu Item 3</a>
+        <a href="#" mat-list-item>Menu Item 4</a>
+        <a href="#" mat-list-item>Menu Item 5</a>
+        <a href="#" mat-list-item>Menu Item 6</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav> -->
+<section class="header">
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a [routerLink]="['/home']"><img src="../../../assets/img/banner logo.png"></a>
+    <div class="nav-links" [style.right]="val" id="navLinks">
+      <mat-icon class="micon" (click)="hideMenu()">close</mat-icon>
+      <ul>
+        <li [ngClass]="href == '/home' ? 'active' : 'liHover'" class="liHover"><a [routerLink]="['/home']"
+            (click)="hideMenu()" href="">HOME</a></li>
+        <li [ngClass]="href == '/about' ? 'active' : 'liHover'"><a [routerLink]="['/about']" (click)="hideMenu()"
+            href="">ABOUT US</a></li>
+        <li [ngClass]="href == '/services' ? 'active' : 'liHover'"><a [routerLink]="['/services']" (click)="hideMenu()"
+            href="">OUR SERVICE</a></li>
+        <li [ngClass]="href == '/contact' ? 'active' : 'liHover'"><a [routerLink]="['/contact']" (click)="hideMenu()"
+            href="">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    <mat-icon class="micon" (click)="showMenu()">menu</mat-icon>
+  </nav>
+</section>
+<a href="https://api.whatsapp.com/send?phone=+919293722423&text=Hello%20i%20need%20help." class="float-w"
+  target="_blank">
+  <i class="fa-brands fa-whatsapp my-float"></i>
+</a>
+<a href="tel:+919293722423" class="float-p" target="_blank">
+  <i class="fa-regular fa-phone my-float"></i>
+</a>

@@ -1,0 +1,133 @@
+<section class="header">
+    <nav>
+        <a [routerLink]="['/Thome']"><img src="../../../assets/img/logo-black.png"></a>
+        <div class="nav-links" [style.right]="val" id="navLinks">
+            <mat-icon class="micon" (click)="hideMenu()">close</mat-icon>
+            <ul>
+                <li><a [routerLink]="['/Thome']" href="">HOME</a></li>
+                <li><a [routerLink]="['/Tabout']" href="">ABOUT US</a></li>
+                <li><a [routerLink]="['/Tcourses']" href="">OUR SERVICE</a></li>
+                <li><a [routerLink]="['/TContact']" href="">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <mat-icon class="micon" (click)="showMenu()">menu</mat-icon>
+    </nav>
+
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam optio iste voluptate sapiente
+            dolorum hic <br> assumenda atque aspernatur dolor saepe culpa fuga laboriosam molestiae, corrupti, a et ea?
+            Libero?</p>
+        <a class="hero-btn">Button Visit Us</a>
+    </div>
+</section>
+
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime odit deleniti, blanditiis magnam est
+        explicabo saepe. Omnis laboriosam expedita assumenda natus, asperiores similique cum provident veritatis tempora
+        eligendi esse.</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="../../../assets/img/pic1.jpg" alt="">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="../../../assets/img/pic5.jpg" alt="">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="../../../assets/img/pic3.jpg" alt="">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonials">
+    <h1>What Our Students Says</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime odit deleniti, blanditiis magnam est
+        explicabo saepe. Omnis laboriosam expedita assumenda natus, asperiores similique cum provident veritatis tempora
+        eligendi esse.</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="../../../assets/img/pic1.jpg" alt="">
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime odit deleniti,
+                    blanditiis magnam est
+                    explicabo saepe. Omnis laboriosam expedita assumenda natus, asperiores similique cum provident
+                    veritatis tempora
+                    eligendi esse.</p>
+                <h3>LONDON</h3>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star_border</mat-icon>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="../../../assets/img/pic5.jpg" alt="">
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime odit deleniti,
+                    blanditiis magnam est
+                    explicabo saepe. Omnis laboriosam expedita assumenda natus, asperiores similique cum provident
+                    veritatis tempora
+                    eligendi esse.</p>
+                <h3>NEW YORK</h3>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star_half</mat-icon>
+                <mat-icon class="star">star_border</mat-icon>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="../../../assets/img/pic3.jpg" alt="">
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime odit deleniti,
+                    blanditiis magnam est
+                    explicabo saepe. Omnis laboriosam expedita assumenda natus, asperiores similique cum provident
+                    veritatis tempora
+                    eligendi esse.</p>
+                <h3>WASHINGTON</h3>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star_half</mat-icon>
+                <mat-icon class="star">star_border</mat-icon>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cta">
+    <h1>Contact us</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, inventore ab nemo debitis facilis ducimus odio
+        ex. <br>Dicta quam ullam quod sint porro nisi natus ad numquam sed, ea libero?</p>
+    <div class="icons">
+        <!-- <fa-icon [icon]="facebook"></fa-icon> -->
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i></p>
+</section>

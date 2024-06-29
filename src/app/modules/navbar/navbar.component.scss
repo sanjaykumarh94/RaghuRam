@@ -1,0 +1,242 @@
+@import "../../../styles.scss";
+
+// .menu-spacer {
+//     flex: 1 1 auto;
+//   }
+
+// li:hover {
+//   width: 50px;
+//   text-align: center;
+// }
+
+.header {
+  // min-height: 100vh;
+  width: 100%;
+  // background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../../assets/img/pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 0% 2% 0% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul {
+  margin: 0;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+
+.nav-links ul li a {
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+// .nav-links ul li::after {
+//   content: "";
+//   width: 0%;
+//   height: 2px;
+//   background: $primary-color;
+//   display: block;
+//   margin: auto;
+//   transition: 0.5s;
+
+// }
+
+// .nav-links ul li:hover:after {
+//   // background-image: url(./../../../assets/img/1491717.png)no-repeat;;
+//   width: 100%;
+// }
+
+// .nav-links ul li:hover {
+
+//   background-image: url(../../../assets/img/trident.png);
+//   background-size: 35px 35px;
+//   /* margin-left: 17px; */
+//   background-repeat: no-repeat;
+//   background-position: bottom;
+//   /* height: 40px; */
+//   background-position-x: right;
+//   /* width: 130px; */
+//   transition: 0.5s;
+//   padding-right: 38px;
+// }
+// .nav-links ul li .active{
+//   background-image: url(../../../assets/img/trident.png);
+//   background-size: 35px 35px;
+//   /* margin-left: 17px; */
+//   background-repeat: no-repeat;
+//   background-position: bottom;
+//   /* height: 40px; */
+//   background-position-x: right;
+//   /* width: 130px; */
+//   transition: 0.5s;
+//   padding-right: 38px;
+// }
+.nav-links ul .liHover::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: $primary-color;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+
+.nav-links ul .liHover:hover:after {
+  // background-image: url(./../../../assets/img/1491717.png)no-repeat;;
+  width: 100%;
+}
+
+.nav-links ul .liHover:hover {
+
+  background-image: url(../../../assets/img/trident.png);
+  background-size: 35px 35px;
+  /* margin-left: 17px; */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* height: 40px; */
+  background-position-x: right;
+  /* width: 130px; */
+  transition: 0.5s;
+  padding-right: 38px;
+}
+
+.nav-links ul .active {
+  background-image: url(../../../assets/img/trident.png);
+  background-size: 35px 35px;
+  /* margin-left: 17px; */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* height: 40px; */
+  background-position-x: right;
+  /* width: 130px; */
+  transition: 0.5s;
+  padding-right: 38px;
+}
+
+nav .micon {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #fff;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    // opacity: 0.5;
+  }
+
+  nav .micon {
+    display: block;
+    color: $primary-color;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  //   .nav-links ul li a{
+  //     color: #fff;
+  // }
+
+}
+
+
+.navbar {
+  box-shadow: 0 2px 2px -2px $primary-color;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.float-w {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float-p {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #3a1baa;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float-p:hover,
+.float-w:hover {
+  color: $primary-color;
+}
+
+.my-float {
+  margin-top: 16px;
+}

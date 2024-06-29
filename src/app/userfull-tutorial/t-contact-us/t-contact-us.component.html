@@ -1,0 +1,73 @@
+<section class="sub-header">
+    <nav>
+        <a [routerLink]="['/Thome']"><img src="../../../assets/img/logo-black.png"></a>
+        <div class="nav-links" [style.right]="val" id="navLinks">
+            <mat-icon class="micon" (click)="hideMenu()">close</mat-icon>
+            <ul>
+                <li><a [routerLink]="['/Thome']" href="">HOME</a></li>
+                <li><a [routerLink]="['/Tabout']" href="">ABOUT US</a></li>
+                <li><a [routerLink]="['/Tcourses']" href="">OUR SERVICE</a></li>
+                <li><a [routerLink]="['/TContact']" href="">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <mat-icon class="micon" (click)="showMenu()">menu</mat-icon>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<section class="location">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62176.881985504115!2d77.50900695820312!3d13.095692999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1946545b5153%3A0xb2014d653b213103!2sYelahanka%20New%20Town%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1663690212858!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-regular fa-home"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Bangalore, Karnataka, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-regular fa-phone"></i>
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>info@psychic-raghuramji.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter Email-Id" required>
+            <input type="text" placeholder="Enter your subject" required>
+            <textarea  placeholder="Message" rows="8" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Submit</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, inventore ab nemo debitis facilis ducimus odio
+        ex. <br>Dicta quam ullam quod sint porro nisi natus ad numquam sed, ea libero?</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i></p>
+</section>
